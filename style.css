@@ -1,0 +1,141 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    background: #151519;
+}
+
+.button1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button1 {
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 1px solid #338933;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+.button1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: @;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.button1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: ©;
+    opacity: 0;
+    filter: blur (30px);
+    transform: translate( 00px) scaleX(-15deg);
+}
+
+.button1:hover {
+    background: #338833;
+    cursor: pointer;
+}
+
+.button1:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.button1:hover:after {
+    transform: translateX( 300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+
+
+.button2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.button2 {
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 1px solid #338933;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+.button2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: @;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.button2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: ©;
+    opacity: 0;
+    filter: blur (30px);
+    transform: translate( -100px) scaleX(-15deg);
+}
+
+.button2:hover {
+    background: #338833;
+    cursor: pointer;
+}
+
+.button2:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.button2:hover:after {
+    transform: translateX( 300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
